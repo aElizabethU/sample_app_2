@@ -24,7 +24,7 @@ describe "Static pages" do
     let(:page_title)  { '' }
 
     it_should_behave_like "all static pages"
-    #it { should_not have_selector 'title', text: '| Help' }
+    it { should_not have_selector 'title', text: '| Help' }
   end
 
   describe "About page" do
@@ -33,7 +33,7 @@ describe "Static pages" do
     let(:page_title)  { '' }
 
     it_should_behave_like "all static pages"
-    #it { should_not have_selector 'title', text: '| About' }
+    it { should_not have_selector 'title', text: '| About' }
   end
 
   describe "Contact page" do
@@ -42,6 +42,6 @@ describe "Static pages" do
     let(:page_title)  { '' }
 
     it_should_behave_like "all static pages"
-    #it { should_not have_selector 'title', text: '| Contact' }
+    it { should_not have_selector 'title', text: '| Contact' }
   end
 end
